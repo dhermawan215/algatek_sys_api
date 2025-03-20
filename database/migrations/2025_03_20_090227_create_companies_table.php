@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('npwp')->nullable();
             $table->string('pic')->nullable();
             $table->text('address')->nullable();
-            $table->decimal('longitude')->nullable();
-            $table->decimal('latitude')->nullable();
+            $table->decimal('longitude', 10, 8)->nullable();
+            $table->decimal('latitude', 10, 8)->nullable();
             $table->timestamps();
         });
     }
