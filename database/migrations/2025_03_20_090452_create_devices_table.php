@@ -16,6 +16,7 @@ return new class extends Migration
             $table->bigInteger('company_id');
             $table->string('code')->unique()->nullable();
             $table->string('device_name')->nullable();
+            $table->string('device_key')->nullable();
             $table->decimal('longitude')->nullable();
             $table->decimal('latitude')->nullable();
             $table->timestamps();
